@@ -136,6 +136,7 @@ header{
     display:none;
     font-weight: 400;
     margin-right:3rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .order-button{
@@ -160,7 +161,7 @@ header{
 }
 
 .content h1{
-    font-size:62px;
+    font-size:55px;
     font-weight: 500;
 }
 

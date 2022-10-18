@@ -104,7 +104,7 @@ header{
 .nav-list {
     display:grid;
     gap:1.5rem;
-    text-align: center;
+    margin-top:-5rem;
 }
 
 .nav-item {

@@ -152,7 +152,7 @@ header{
     top:0;
     left:0;
     display:grid;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .content{
@@ -198,10 +198,6 @@ video {
     height: 100vh;
     object-fit:cover;
     z-index:-1;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-
 }
 
 
@@ -256,28 +252,7 @@ video {
     }
 
     .hero-section{
-        display:grid;
-        grid-template-columns: 50% 50%;
-        background-color: #841421;
-        position: absolute;
-        height:100vh;
-        align-items: center;
-        
-    }
-
-    .video-container{
-        border:1px solid;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        height:100vh;
-        width:auto;
-    }
-    video{
-        position: relative;
-        width: 100%;
-        height: 100%;
-        z-index:1;
+        place-content: center;
     }
     .content h1{
         font-size:80px;

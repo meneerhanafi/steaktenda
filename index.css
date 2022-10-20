@@ -9,6 +9,8 @@
 
 html, body{
     padding:0;
+    margin:0;
+    overflow-x: hidden;
 }
 
 h1{
@@ -27,7 +29,7 @@ header{
     left:0;
     padding:0 1rem;
     z-index:999;
-    background-color: #841421;
+    background-color: #801622;
 }
 
 .header-content{
@@ -92,7 +94,7 @@ header{
 .nav {
     position:fixed;
     inset:0 0 0 0%;
-    background-color: #841421;
+    background-color: #801622;
     transform: translateY(-100%);
     transition: transform 300ms cubic-bezier(.5, 0, .5, 1);
     z-index:2;
@@ -145,34 +147,33 @@ header{
 
 /*HERO SECTION*/
 .hero-section{
-    background-color: rgba(0, 0, 0, 0.337);
+    background-color: rgba(0, 0, 0, 0.197);
     height:100vh;
-    width:100%;
-    position: absolute;
-    top:0;
-    left:0;
+    width:100vw;
+    padding:2rem;
     display:grid;
-    align-items: center;
+    place-content: center;
+
 }
 
-.content{
-    padding:2rem;
+.hero-content{
+
     color:#f7f6f2;;
 }
 
-.content h1{
+.hero-content h1{
     font-size:45px;
     font-weight: 500;
 }
 
-.content p { 
+.hero-content p { 
     font-size:15px;
     margin-bottom:1.5rem;
     line-height: 2rem;
     font-weight: 200;
 }
 
-.content button{
+.hero-content button{
     border:none;
     padding:1rem;
     background-color:#d66620;
@@ -186,9 +187,10 @@ header{
     box-shadow: 10px 10px 39px 0px rgba(0,0,0,0.75);
 }
 
-.content button:hover{
+.hero-content button:hover{
     background-color:#f17425;
 }
+
 
 video { 
     position: absolute;
@@ -199,6 +201,110 @@ video {
     object-fit:cover;
     z-index:-1;
 }
+
+
+
+
+
+.favorite-menu{
+    background-color:#fffae6;
+    padding: 2rem 1rem;
+    height:100%;
+}
+
+
+.menu-title{
+    color:#801622;
+    display:grid;
+    justify-content: center;
+    margin-top:-2rem;
+
+}
+
+/*IMAGE CONTENT*/
+.items {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+    padding:0 1rem;
+    padding-bottom:2rem;
+
+
+
+}
+  
+.items.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+}
+  
+.item {
+    width: 300px;
+    height:100%;
+    display: inline-flex;
+    margin: 0 0.5rem;
+
+
+}
+
+.item img {
+    width:100%;
+}
+
+.tentang-kami{
+    padding: 1rem 2rem;
+    line-height: 2rem;
+
+    color:#590f18;
+}
+
+
+
+.naikin-moodmu{
+    height:10px;
+
+}
+
+.signature{
+    width:100%;
+}
+
+
+.education{
+    margin:0;
+    display:grid;
+    background-color:#fffae6;
+}
+.education img{
+    width:100%;
+
+}
+
+
+footer{
+    background-color:#2b2a2a;
+    display:grid;
+    justify-content: center;
+    padding:1rem 4rem;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color:#e1e1e1;
+}
+
+.footer-logo-container{
+    display:grid;
+    justify-content: center;
+}
+.footer-logo-container img{
+    width:200px;
+}
+
+
 
 
 @media(min-width:1280px){
@@ -253,21 +359,59 @@ video {
 
     .hero-section{
         place-content: center;
+
     }
-    .content h1{
+
+    .hero-content h1{
         font-size:80px;
         width:800px; 
     }
 
-    .content p{
+    .hero-content p{
         font-size:18px;
         width:600px;
     }
 
-    .content button{
+    .hero-content button{
         width:190px;
         padding:1rem;
         font-size:14px;
         margin-top:2rem;
     }
+
+    .favorite-menu{
+        padding:2rem 14rem;
+    }
+
+
+    .education{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+
+    footer{
+        gap: 2rem;
+    }
+    .location-container{
+        display:flex;
+        gap:7rem;
+
+
+    }
+
+    .location{
+        width:300px;
+    }
+
+
+
+
+
+
+
+
+
+
+
 }
